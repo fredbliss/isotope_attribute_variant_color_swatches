@@ -1,11 +1,4 @@
 <?php
 
-/**
- * listings attribute for Isotope eCommerce
- *
- * @copyright jedoStyle 2016 <http://www.jedo-style.de>
- * @author Jens Doberenz <github@jedo-style.de>
- * @licence LGPL
- */
-
-\Isotope\Model\Attribute::registerModelType('VariantColorSwatches', 'IntelligentSpark\Model\Attribute\AttributeVariantColorSwatches');
+$GLOBALS['ISO_HOOKS']['generateProduct'][]          = array('IntelligentSpark\Module\VariantColorSwatches','generateProduct');
+$GLOBALS['TL_HOOKS']['modifyFrontendPage'][]            = array('IntelligentSpark\Hooks\Swatches', 'injectScripts');

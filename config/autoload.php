@@ -17,5 +17,5 @@ if (class_exists('NamespaceClassLoader')) {
 ClassLoader::addClasses(array
 (
 	// Src
-	'IntelligentSpark\Model\Attribute\VariantColorSwatches' => 'system/modules/isotope_attribute_variant_color_swatches/library/IntelligentSpark/Model/Attribute/VariantColorSwatches.php',
+	'IntelligentSpark\Module\VariantColorSwatches' => 'system/modules/isotope_attribute_variant_color_swatches/library/IntelligentSpark/Module/VariantColorSwatches.php',
 ));
